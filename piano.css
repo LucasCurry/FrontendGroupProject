@@ -40,7 +40,7 @@ body {
   width: 68px;
   border-radius: 0 0 5px 5px;
   border: 1px solid #000;
-  background: linear-gradient(#fff 96%, #eee 4%);
+  /* background: linear-gradient(#fff 96%, #eee 4%); */
   box-sizing: border-box;
 }
 
@@ -54,7 +54,11 @@ body {
   border-radius: 0 0 5px 5px;
   box-sizing: border-box; /* make sure that boarder is on the inside */
   position: absolute;
-  background: linear-gradient(#333, #000);
+  background-color: black;
+}
+
+.black:active {
+  background-color: grey;
 }
 
 .black:nth-child(1) {
