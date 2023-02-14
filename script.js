@@ -2,20 +2,20 @@ const pianoMap = new Map();
 const keyBindsMap = new Map()
 const buttons = document.querySelectorAll("button")
 
-pianoMap.set('wk1', new Audio("sound/note01.mp3"))
-pianoMap.set('wk2', new Audio("sound/note02.mp3"))
-pianoMap.set('wk3', new Audio("sound/note03.mp3"))
-pianoMap.set('wk4', new Audio("sound/note04.mp3"))
-pianoMap.set('wk5', new Audio("sound/note05.mp3"))
-pianoMap.set('wk6', new Audio("sound/note06.mp3"))
+pianoMap.set('wk1', new Audio("sounds/note1.mp3"))
+pianoMap.set('bk1', new Audio("sounds/note2.mp3"))
+pianoMap.set('wk2', new Audio("sounds/note3.mp3"))
+pianoMap.set('bk2', new Audio("sounds/note4.mp3"))
+pianoMap.set('wk3', new Audio("sounds/note5.mp3"))
+pianoMap.set('wk4', new Audio("sounds/note6.mp3"))
+pianoMap.set('bk3', new Audio("sounds/note7.mp3"))
+pianoMap.set('wk5', new Audio("sounds/note8.mp3"))
+pianoMap.set('bk4', new Audio("sounds/note9.mp3"))
+pianoMap.set('wk6', new Audio("sounds/note10.mp3"))
+pianoMap.set('bk5', new Audio("sounds/note11.mp3"))
+pianoMap.set('wk7', new Audio("sounds/note12.mp3"))
 
-pianoMap.set('bk1', new Audio("sound/note07.mp3"))
-pianoMap.set('bk2', new Audio("sound/note08.mp3"))
-pianoMap.set('bk3', new Audio("sound/note09.mp3"))
 
-
-
-// the event loop, fucks it.
 
 buttons.forEach(button => {
     button.addEventListener("click", () => {
