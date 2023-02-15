@@ -58,22 +58,61 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
-/* 
+
 .control-panel {
-  width: 535px;
-  height: 100px;
-  margin: 10% 0;
-  border: #141414 solid 1px;
+  width: 530px;
+  height: 60px;
+  margin: 15% 0;
+  /* border: #141414 solid 1px; */
   display: flex;
-  align-self: center; 
+  align-self: center;
+  align-items: center; 
+  justify-content: center;
   border-radius: 4px;
-  background: linear-gradient(315deg, #454444, #525151);
+  /* background: linear-gradient(315deg, #454444, #525151); */
   box-shadow:  -20px -20px 40px #414141, 20px 20px 40px #595757; 
 }
- */
+
+.control-panel button {
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #212121;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
+}
+
+.control-panel button span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #212121;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+.control-panel button span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+.control-panel button span:not(hover) {
+  transition: all 1s;
+}
+
+
 .piano-classic {
   /* align-self: center; */
-  margin: 30% 0;
+  margin: 10% 0;
   height: 290px;
   width: fit-content;
   padding: 90px 30px 0 30px;
@@ -178,7 +217,7 @@ body {
   min-height: 100vh;
   min-width: 100%;
   display: flex;
-  justify-content: center;
+ /*  justify-content: center; */
   flex-direction: column;
 
   background-size: 300% 300%;
@@ -192,10 +231,6 @@ body {
   animation: animate-background-test1 20s ease infinite;
 
 }
-
-
-
-
 
 
 /* below are alternative designs for backgrounds  */
