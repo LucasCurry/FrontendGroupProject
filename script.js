@@ -38,8 +38,8 @@ function addButtonListeners(pianoSoundMap) {
 
 
 function renderBackground() {
-    const currentBackground = background.className
-    background.classList.add(newDesign)
+    let currentBackground = background.className
+    background.classList.add(selectedBackground())
     background.classList.remove(currentBackground)
 }
 
