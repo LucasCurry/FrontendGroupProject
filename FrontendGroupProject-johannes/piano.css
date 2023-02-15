@@ -18,7 +18,7 @@ body {
 .piano {
   height: 290px;
   padding: 90px 30px 0 30px;
-  border-radius: 30px;
+  border-radius: 5px;
   background: linear-gradient(
     122.3deg,
     rgb(111, 71, 133) 14.6%,
@@ -28,15 +28,28 @@ body {
     rgb(154, 219, 232) 68.7%,
     rgb(238, 226, 159) 84.8%
   );
+  box-shadow: -6px -6px 30px grey, 6px 6px 30px grey;
 }
 
 .white-keys {
   display: flex;
 }
 
+.white-keys button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
 .black-keys {
   position: relative;
   display: flex;
+}
+
+.black-keys button {
+  color: white;
+  display: flex;
+  align-items: flex-end;
 }
 
 .white-keys button {
