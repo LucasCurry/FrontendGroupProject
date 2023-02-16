@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -19,11 +18,11 @@ body {
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
-  background: rgb(255,255,255);
-  background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(180,180,180,1) 26%, rgba(80,80,80,1) 100%);
-  background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(180,180,180,1) 26%, rgba(80,80,80,1) 100%);
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(180,180,180,1) 26%, rgba(80,80,80,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#505050",GradientType=1);
+  background: rgb(255, 255, 255);
+  background: -moz-radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(180, 180, 180, 1) 26%, rgba(80, 80, 80, 1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(180, 180, 180, 1) 26%, rgba(80, 80, 80, 1) 100%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(180, 180, 180, 1) 26%, rgba(80, 80, 80, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#505050", GradientType=1);
 }
 
 .center {
@@ -44,11 +43,6 @@ body {
 
 .design {
   display: flex;
-  width: 550px;
-  height: 45px;
-  border: #141414 solid 1px;
-  align-self: flex-start;
-  align-content: center;
   justify-content: center;
 }
 
@@ -60,17 +54,9 @@ body {
 }
 
 .control-panel {
-  width: 530px;
-  height: 60px;
   margin: 15% 0;
-  /* border: #141414 solid 1px; */
   display: flex;
-  align-self: center;
-  align-items: center; 
   justify-content: center;
-  border-radius: 4px;
-  /* background: linear-gradient(315deg, #454444, #525151); */
-  box-shadow:  -20px -20px 40px #414141, 20px 20px 40px #595757; 
 }
 
 .control-panel button {
@@ -111,14 +97,13 @@ body {
 
 
 .piano-classic {
-  /* align-self: center; */
   margin: 10% 0;
   height: 290px;
   width: fit-content;
   padding: 90px 30px 0 30px;
   border-radius: 4px;
   background: linear-gradient(315deg, #030303, #030303);
-  box-shadow:  -6px -6px 30px #020202, 6px 6px 30px #040404;
+  box-shadow: -6px -6px 30px #020202, 6px 6px 30px #040404;
 
 }
 
@@ -139,7 +124,6 @@ body {
   height: 110px;
   border-radius: 8px;
   background: linear-gradient(315deg, #030303, #030303);
-  /* opacity: 0.9; */
 }
 
 .white-keys button {
@@ -149,20 +133,18 @@ body {
   box-sizing: border-box;
   border: 1px solid #000;
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  /* opacity: 1; */
-  /* transition: opacity .5s ease; */
 }
 
 .black-keys button:hover {
   border-radius: 8px;
   background: linear-gradient(315deg, #0e0e0e, #0c0c0c);
-  box-shadow:  -6px -6px 12px #050505, 6px 6px 12px #151515;
+  box-shadow: -6px -6px 12px #050505, 6px 6px 12px #151515;
 }
 
 .white-keys button:hover {
   border-radius: 8px;
   background: linear-gradient(315deg, #ffffff, #e6e6e6);
-  box-shadow:  -6px -6px 12px #666666, 6px 6px 12px #ffffff;
+  box-shadow: -6px -6px 12px #666666, 6px 6px 12px #ffffff;
 }
 
 .white-keys button:active {
@@ -171,11 +153,9 @@ body {
 
 
 .black-keys button:active {
-  background: linear-gradient(
-    109.6deg,
-    rgb(63, 61, 61) 11.2%,
-    rgba(0, 0, 0, 0.93) 7878.9%
-  );
+  background: linear-gradient(109.6deg,
+      rgb(63, 61, 61) 11.2%,
+      rgba(0, 0, 0, 0.93) 7878.9%);
 }
 
 .black-keys button:nth-child(1) {
@@ -189,9 +169,11 @@ body {
 .black-keys button:nth-child(3) {
   left: 52%;
 }
+
 .black-keys button:nth-child(4) {
   left: 65.5%;
 }
+
 .black-keys button:nth-child(5) {
   left: 80%;
 }
@@ -206,9 +188,17 @@ body {
 
 /* below are alternative designs for backgrounds  */
 @keyframes animate-background-test1 {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 .background-test1 {
@@ -217,17 +207,15 @@ body {
   min-height: 100vh;
   min-width: 100%;
   display: flex;
- /*  justify-content: center; */
+  /*  justify-content: center; */
   flex-direction: column;
 
   background-size: 300% 300%;
-  background-image: linear-gradient(
-        -45deg, 
-        rgba(59,173,227,1) 0%, 
-        rgba(87,111,230,1) 25%, 
-        rgba(152,68,183,1) 51%, 
-        rgba(255,53,127,1) 100%
-  );  
+  background-image: linear-gradient(-45deg,
+      rgba(59, 173, 227, 1) 0%,
+      rgba(87, 111, 230, 1) 25%,
+      rgba(152, 68, 183, 1) 51%,
+      rgba(255, 53, 127, 1) 100%);
   animation: animate-background-test1 20s ease infinite;
 
 }
@@ -238,21 +226,22 @@ body {
 
 
 .piano-gradient {
-  margin: 30% 0;
+  margin: 10% 0;
   height: 290px;
   width: fit-content;
   padding: 90px 30px 0 30px;
   border-radius: 30px;
-  background: linear-gradient(
-    122.3deg,
-    rgb(111, 71, 133) 14.6%,
-    rgb(232, 129, 166) 29.6%,
-    rgb(237, 237, 183) 42.1%,
-    rgb(244, 166, 215) 56.7%,
-    rgb(154, 219, 232) 68.7%,
-    rgb(238, 226, 159) 84.8%
-  );
+  background: linear-gradient(122.3deg,
+      rgb(111, 71, 133) 14.6%,
+      rgb(232, 129, 166) 29.6%,
+      rgb(237, 237, 183) 42.1%,
+      rgb(244, 166, 215) 56.7%,
+      rgb(154, 219, 232) 68.7%,
+      rgb(238, 226, 159) 84.8%);
+  box-shadow: -6px -6px 30px #020202, 6px 6px 30px #040404;
 }
+
+
 
 
 
